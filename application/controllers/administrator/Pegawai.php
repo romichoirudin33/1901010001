@@ -11,7 +11,8 @@ class Pegawai extends CI_Controller
     public function index()
     {
         $data['data_pegawai'] = $this->m_pegawai->getAll();
-
+        
+        // keterangan untuk judul halaman
         $data['judul'] = 'Data Pegawai';
 
         $this->load->view('administrator/template', $data);
